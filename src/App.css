@@ -1,0 +1,76 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: black;
+    }
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      width: 80%;
+      margin: 30px auto;
+    }
+    .movie-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .movie-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 300px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .movie-card img {
+      width: 100%;
+      height: auto;
+    }
+    .movie-card-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .movie-card-title {
+      font-size: 1.2em;
+      margin: 0 0 10px;
+    }
+    .movie-card-year {
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .movie-card-price {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .movie-card a {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+    .movie-card a:hover {
+      background-color: #555;
+    }
+    @media(max-width: 768px) {
+      .movie-card {
+        width: 45%;
+      }
+    }
+    @media(max-width: 480px) {
+      .movie-card {
+        width: 100%;
+      }
+    }
+ 
